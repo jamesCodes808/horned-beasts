@@ -1,4 +1,5 @@
 import React from 'react';
+import HornedBeast from './HornedBeast';
 
 const hornedBeastsArray = [{
     "_id": 1,
@@ -27,24 +28,22 @@ const hornedBeastsArray = [{
     "horns": 1
 }]
 
-const renderHornedBeasts = hornedBeastsArray.map(beast => (
-    [
-        <h2 key={beast._id}>{beast.title}</h2>,
-        <img src={beast.image_url} alt={beast.description} title={beast.title}></img>,
-        <p>{beast.description}</p>,
-    ]
-));
-
-
-class HornedBeast extends React.Component {
-
+class Main extends React.Component {
     render() {
         return (
             <main>
-                {renderHornedBeasts}
+                {hornedBeastsArray.map(beast => (
+                    <HornedBeast
+                        key={beast._id}
+                        imageUrl={beast.image_url}
+                        description={beast.description}
+                        title={beast.title}
+                    />
+                ))}
             </main>
         )
     }
 }
 
-export default HornedBeast; 
+
+export default Main;
