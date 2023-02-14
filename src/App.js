@@ -1,15 +1,16 @@
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
-import HornedBeast from './Main';
+import Main from './Main';
+import HornedBeast from './HornedBeast';
 
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Main />
       <Footer />
-      <HornedBeast />
 
     </div>
   );
