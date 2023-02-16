@@ -41,3 +41,14 @@
 >Finish Time: 4:00pm
 >
 >Actual time needed to complete: 10min
+
+>Number and name of Feature: Feature#5 - Display a Modal
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start Time: 1:55pm
+>
+>Finish Time: 4:55pm
+>
+>Actual time needed to complete: 3 hours 
+

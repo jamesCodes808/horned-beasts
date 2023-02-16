@@ -1,5 +1,4 @@
 import React from 'react';
-import Data from './data.json'
 import HornedBeast from './HornedBeast';
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import Container from 'react-bootstrap/Container';
@@ -7,6 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 class Main extends React.Component {
+    constructor(props) {
+        super(props);
+    };
 
     render() {
         return (
@@ -17,13 +19,15 @@ class Main extends React.Component {
                 <main>
                     <Container fluid="lg">
                         <Row className="justify-content-sm-center">
-                            {Data.map(beast => (
+                            {this.props.beastList.map(beast => (
                                 <Col sm={12} md={6} lg={4} xl={4}>
                                     <HornedBeast
-                                        key={beast._id}
+                                        key={beast.key}
                                         imageUrl={beast.image_url}
                                         description={beast.description}
                                         title={beast.title}
+                                        chooseBeast={this.props.chooseBeast}
+                                        handleShowModalClick={this.props.handleShowModalClick}
                                     />
                                 </Col>
                             ))}
