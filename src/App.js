@@ -23,25 +23,10 @@ class App extends React.Component {
     }
   }
 
-  chooseBeast = (beastObj) => {
-    this.setState({
-      selectedBeast: beastObj
-    })
-  }
 
-  handleShowModalClick = () => {
-    this.setState({
-      setModalShow: true,
-      modalShow: true
-    });
-  }
 
-  handleCloseModalClick = () => {
-    this.setState({
-      setModalShow: false,
-      modalShow: false
-    })
-  }
+
+
 
   render() {
     return (
@@ -56,11 +41,6 @@ class App extends React.Component {
             beastList={Data}
             chooseBeast={this.chooseBeast}
             handleShowModalClick={this.handleShowModalClick}
-          />
-          <SelectedBeast
-            beast={this.state.selectedBeast}
-            show={this.state.modalShow}
-            onHide={this.handleCloseModalClick}
           />
           <Footer />
         </div>
