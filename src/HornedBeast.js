@@ -17,14 +17,8 @@ class HornedBeast extends React.Component {
         this.setState({ favorites: this.state.favorites + 1 });
     }
 
-    handleImgClick = (e) => {
-        let focusBeast = {
-            src: e.target.src,
-            title: e.target.title,
-            description: e.target.alt,
-        }
-        this.props.chooseBeast(focusBeast);
-        this.props.handleShowModalClick();
+    handleImgClick = () => {
+        this.props.setSelectedBeast(this.props.beast)
     }
 
     render() {

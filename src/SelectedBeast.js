@@ -24,7 +24,7 @@ class SelectedBeast extends React.Component {
                 <Modal.Body>
                     <h4>{this.props.beast.title}</h4>
                     <img
-                        src={this.props.beast.src}
+                        src={this.props.beast.image_url}
                         alt={this.props.beast.description}
                         class="card-image"
                         style={{ width: 200, height: 200 }}>
