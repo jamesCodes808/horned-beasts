@@ -49,9 +49,9 @@ class Main extends React.Component {
         })
     }
 
-    handleSubmit = (e) => {
+    // handleSubmit = (e) => {
 
-    }
+    // }
 
     fuzzySearch = (searchStatement, searchCat) => {
         let filteredBeasts = [];

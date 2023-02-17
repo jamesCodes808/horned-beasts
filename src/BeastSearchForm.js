@@ -4,17 +4,6 @@ import Form from 'react-bootstrap/Form';
 
 class BeastSearchForm extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-            searchQuery: '',
-            title: '',
-            horns: '',
-            keyword: '',
-            description: ''
-        }
-    }
-
 
     render() {
         return (
