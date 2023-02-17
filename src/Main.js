@@ -50,16 +50,16 @@ class Main extends React.Component {
     }
 
     handleSubmit = (e) => {
-        
+
     }
 
     fuzzySearch = (searchStatement, searchCat) => {
-        let filteredBeasts = new Array();
-        this.props.beastList.filter(beast => {
+        let filteredBeasts = [];
+        filteredBeasts = this.props.beastList.filter(beast => {
 
 
             if (beast[searchCat] == searchStatement) {
-                filteredBeasts.push(beast)
+                return beast
             }
         })
 
