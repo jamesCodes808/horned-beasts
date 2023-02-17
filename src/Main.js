@@ -55,14 +55,11 @@ class Main extends React.Component {
 
     fuzzySearch = (searchStatement, searchCat) => {
         let filteredBeasts = [];
-        filteredBeasts = this.props.beastList.filter(beast => {
-
-
-            if (beast[searchCat] == searchStatement) {
-                return beast
+        this.props.beastList.forEach(beast => {
+            if (beast[searchCat].toString() === searchStatement.toString()) {
+                filteredBeasts.push(beast)
             }
         })
-
         console.log(filteredBeasts)
         return filteredBeasts;
     }
