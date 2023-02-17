@@ -5,7 +5,6 @@ import Footer from './Footer';
 import Main from './Main';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import Data from './data.json';
-import SelectedBeast from './SelectedBeast';
 import React from 'react';
 
 class App extends React.Component {

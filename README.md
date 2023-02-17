@@ -52,3 +52,35 @@
 >
 >Actual time needed to complete: 3 hours 
 
+>Number and name of Feature: Feature#6 - Fuzzy Search
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start Time: 5:10pm
+>
+>Finish Time: 7:50pm
+>
+>Actual time needed to complete: 2 hours 40 minutes
+
+>Number and name of Feature: Feature#6 - Fuzzy Search
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start Time: 5:10pm
+>
+>Finish Time: 7:50pm
+>
+>Actual time needed to complete: 2 hours 40 minutes
+
+>Number and name of Feature: Feature#7 - Filter by Numbers of Horns
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start Time: 5:10pm
+>
+>Finish Time: 7:50pm
+>
+>Actual time needed to complete: 2 hours 40 minutes
+
+
+
