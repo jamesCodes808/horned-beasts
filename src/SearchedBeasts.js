@@ -3,10 +3,6 @@ import HornedBeast from './HornedBeast';
 import Col from 'react-bootstrap/Col';
 
 class SearchedBeasts extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
 
     render() {
         console.log(this.props.filteredBeasts)
