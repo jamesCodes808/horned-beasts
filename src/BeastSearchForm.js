@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Data from './data.json';
 
 class BeastSearchForm extends React.Component {
 
@@ -16,19 +15,6 @@ class BeastSearchForm extends React.Component {
         }
     }
 
-    // handleSearchInput = (e) => {
-    //     console.log(e.target.value)
-    //     this.setState = ({ searchQuery: e.target.value });
-    // }
-
-    // handleSelect = (e) => {
-    //     this.setState = ({})
-    // }
-
-    // handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     this.props.onSubmit()
-    // }
 
     render() {
         return (
